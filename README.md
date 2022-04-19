@@ -1,2 +1,2 @@
 # vs_code
-a vs code study project
+a code project
