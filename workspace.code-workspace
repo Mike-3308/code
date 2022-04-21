@@ -4,5 +4,79 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+			"files.autoGuessEncoding": true,
+		    "code-runner.runInTerminal": true,
+		    "files.associations": {},
+		    "code-runner.executorMap": {
+		        //global
+		        //"c": "clear && cd $dir && gcc *.c -g -o $fileNameWithoutExt.exe && cp  $fileNameWithoutExt.exe debug.exe && ./$fileNameWithoutExt.exe",
+		        "c": "gcc $fileNameWithoutExt.c -g -o $fileNameWithoutExt.exe && cp  $fileNameWithoutExt.exe $fileNameWithoutExt_debug.exe  && clear && ./$fileNameWithoutExt.exe",
+		        "html": "clear && cd $dir && google-chrome $fileNameWithoutExt.html",
+		        "sh": "clean && cd $dir && ./$fileNameWithoutExt.sh",
+				"":"cd $dir && make"
+		        },
+		        "debug.onTaskErrors": "debugAnyway",
+		        "editor.fontSize": 20,
+		        "code-runner.saveFileBeforeRun": true,
+		        "code-runner.languageIdToFileExtensionMap": {
+		            "bat": ".bat",
+		            "powershell": ".ps1",
+		            "typescript": ".ts"
+		        },
+		        "code-runner.executorMapByGlob": {
+		            "pom.xml": "cd $dir && mvn clean package"
+		        },
+		        "sync.quietSync": true,
+		        "sync.forceUpload": true,
+		        "sync.gist": "bb05f5ea55b87f26b5008ba2c38e70f1",
+		        "git.autofetch": true,
+		        //"terminal.integrated.shell.windows": "cmd.exe",
+		        "terminal.integrated.env.windows": {"CMDER_ROOT": "d:\\cmder\\"},
+		        //"terminal.integrated.shellArgs.windows": [
+		            //"/k",
+		            //"d:\\cmder\\vendor\\init.bat"
+		        //],
+		        "explorer.confirmDelete": false,
+		        "sync.forceDownload": false,
+		        "files.autoSave": "afterDelay",
+		        "files.autoSaveDelay": 300000,
+		        //"terminal.external.windowsExec": "D:\\cmder\\cmd.exe",
+		        "terminal.integrated.copyOnSelection": true,
+		        "terminal.integrated.fontSize": 20,
+		        "terminal.explorerKind": "external",
+		        "debug.console.closeOnEnd": true,
+		        "debug.console.fontSize": 20,
+		        "http.proxySupport": "off",
+		        //"editor.tokenColorCustomizations": null,
+		        //"editor.fontLigatures": null,
+		        //"editor.codeActionsOnSave": null,
+		        "editor.definitionLinkOpensInPeek": true,
+		        "editor.renderControlCharacters": true,
+		        "editor.mouseWheelZoom": true,
+		        "diffEditor.codeLens": true,
+		        //"editor.quickSuggestions": null,
+		        "editor.suggest.shareSuggestSelections": true,
+		        "files.defaultLanguage": "${activeEditorLanguage}",
+		        "files.insertFinalNewline": true,
+		        "files.trimFinalNewlines": true,
+		        "debug.inlineValues": true,
+		        "debug.openExplorerOnEnd": true,
+		        "debug.showBreakpointsInOverviewRuler": true,
+		        "debug.showSubSessionsInToolBar": true,
+		        "scm.alwaysShowActions": true,
+		        "workbench.startupEditor": "none",
+		        "window.menuBarVisibility": "toggle",
+		        "open-in-browser.default": "firefox",
+		        "workbench.editor.enablePreview": false,
+		        "explorer.confirmDragAndDrop": false,
+		        "git.suggestSmartCommit": false,
+		        "editor.minimap.enabled": false,
+		        "scm.defaultViewMode": "tree",
+		        "editor.codeActionsOnSave": {
+		        },
+		       
+
+	}
+	
 }
