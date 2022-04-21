@@ -7,11 +7,15 @@
 	"settings": {
 			"files.autoGuessEncoding": true,
 		    "code-runner.runInTerminal": true,
-		    "files.associations": {},
+		    "files.associations": {
+			"iostream": "cpp",
+			"ostream": "cpp"
+		},
 		    "code-runner.executorMap": {
 		        //global
 		        //"c": "clear && cd $dir && gcc *.c -g -o $fileNameWithoutExt.exe && cp  $fileNameWithoutExt.exe debug.exe && ./$fileNameWithoutExt.exe",
 		        "c": "cd $dir && gcc $fileNameWithoutExt.c -g -o $fileNameWithoutExt.out && clear && ./$fileNameWithoutExt.out",
+				"cpp": "cd $dir && g++ $fileNameWithoutExt.cpp -g -o $fileNameWithoutExt.out && clear && ./$fileNameWithoutExt.out",
 		        "html": "clear && cd $dir && google-chrome $fileNameWithoutExt.html",
 		        "sh": "clean && cd $dir && ./$fileNameWithoutExt.sh",
 				"":"cd $dir && make"
