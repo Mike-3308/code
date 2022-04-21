@@ -11,7 +11,7 @@
 		    "code-runner.executorMap": {
 		        //global
 		        //"c": "clear && cd $dir && gcc *.c -g -o $fileNameWithoutExt.exe && cp  $fileNameWithoutExt.exe debug.exe && ./$fileNameWithoutExt.exe",
-		        "c": "gcc $fileNameWithoutExt.c -g -o $fileNameWithoutExt.exe && cp  $fileNameWithoutExt.exe $fileNameWithoutExt_debug.exe  && clear && ./$fileNameWithoutExt.exe",
+		        "c": "cd $dir && gcc $fileNameWithoutExt.c -g -o $fileNameWithoutExt.out && clear && ./$fileNameWithoutExt.out",
 		        "html": "clear && cd $dir && google-chrome $fileNameWithoutExt.html",
 		        "sh": "clean && cd $dir && ./$fileNameWithoutExt.sh",
 				"":"cd $dir && make"
